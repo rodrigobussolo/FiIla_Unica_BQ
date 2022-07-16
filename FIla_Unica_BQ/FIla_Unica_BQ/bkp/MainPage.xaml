@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fila_Unica_BQ.MainPage"
+             BackgroundImage="splash.png"
+             x:Name="Pagina_Conteudo">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TemaEscuro.xaml"/>
+    </ContentPage.Resources>
+
+    <StackLayout Orientation="Vertical" Margin="20" VerticalOptions="EndAndExpand">
+        <Button
+            Style="{StaticResource StyleButton}"
+            VerticalOptions="EndAndExpand"
+            Text="Berçário 1"
+            Clicked="Button_Clicked"/>
+        <Button
+            Style="{StaticResource StyleButton}"
+            VerticalOptions="EndAndExpand"
+            Text="Berçário 2"/>
+        <Button
+            Style="{StaticResource StyleButton}"
+            VerticalOptions="EndAndExpand"
+            Text="Berçário 3"/>
+        <Button
+            Style="{StaticResource StyleButton}"
+            VerticalOptions="EndAndExpand"
+            Text="Berçário 4"/>
+    </StackLayout>
+
+</ContentPage>
+ 

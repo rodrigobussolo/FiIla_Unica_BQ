@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Fila_Unica_BQ.Controls;assembly=Fila_Unica_BQ"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             x:Class="Fila_Unica_BQ.Views.Content_main"
+             x:Name="Pagina_Conteudo">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TemaEscuro.xaml"/>
+        <ResourceDictionary>
+            <Style TargetType="controls:StandardEntry">
+                <Setter Property="BackgroundColor" Value="#31FFFFFF"/>
+                <Setter Property="BorderColor" Value="Gray"/>
+                <Setter Property="BorderThickness" Value="1"/>
+                <Setter Property="CornerRadius" Value="8"/>
+                <Setter Property="PlaceholderColor" Value="DarkGray"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <StackLayout BackgroundColor="#FF6830" Padding="20,10">
+            <Label x:Name="lbl_Pagina" TextColor="White" FontSize="Large" Margin="0,0,0,-8"/>
+            <Label x:Name="lbl_SubTitulo" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+
+        <AbsoluteLayout>
+            <ScrollView AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                <StackLayout >
+                    <StackLayout Padding="20,10">
+                        <Label TextColor="#2c3e50" FontSize="Medium" Text="Informe o numero do Protocolo"/>
+
+                        <controls:StandardEntry
+                            x:Name="txt_Protocolo"
+                            MaxLength="6"
+                            BorderThickness="1"
+                            CornerRadius="8"
+                            Placeholder="Protocolo"
+                            FontSize="50"
+                            Keyboard="Numeric"
+                            VerticalTextAlignment="Center"
+                            HorizontalTextAlignment="Center"
+                            />
+
+                        <Button
+                            x:Name="btn_Buscar"
+                            Clicked="OnBuscarClick"
+                            Style="{StaticResource StyleButton}"
+                            Text="BUSCAR"
+                            FontSize="15"
+                            android:Button.UseDefaultShadow="true"
+                            BackgroundColor="#2c3e50"
+                            TextColor="White"
+                            WidthRequest="20"
+                            Margin="0"/>
+                    </StackLayout>
+
+                    <Grid Padding="20,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" FontSize="Medium" Text="Posição:" />
+                        <Frame  Grid.Row="1" Grid.Column="0">
+                            <Label x:Name="lbl_Posicao" FontSize="20" />
+                        </Frame>
+
+                        <Label Grid.Row="0" Grid.Column="1" FontSize="Medium" Text="Protocolo:"/>
+                        <Frame Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2">
+                            <Label x:Name="lbl_Protocolo" FontSize="20" />
+                        </Frame>
+                    </Grid>
+
+                    <Grid Padding="20,0,20,20">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="Body" Text="Data/Hora Inscrição:"/>
+                        <Frame Grid.Row="1" Grid.ColumnSpan="2">
+                            <Label x:Name="lbl_datahora" FontSize="Body" />
+                        </Frame>
+
+                        <Label Grid.Row="2" Grid.ColumnSpan="2" FontSize="Body" Text="Opção 1:"/>
+                        <Frame Grid.Row="3" Grid.ColumnSpan="2">
+                            <Label x:Name="lbl_Opc1" FontSize="Body" />
+                        </Frame>
+
+                        <Label Grid.Row="4" FontSize="Body" Text="Opção 2:"/>
+                        <Frame Grid.Row="5" Grid.ColumnSpan="2">
+                            <Label x:Name="lbl_Opc2" FontSize="Body" />
+                        </Frame>
+
+                        <Label Grid.Row="6" FontSize="Body" Text="Opção 3:"/>
+                        <Frame Grid.Row="7" Grid.ColumnSpan="2">
+                            <Label x:Name="lbl_Opc3" FontSize="Body" />
+                        </Frame>
+
+                        <Label Grid.Row="8" Grid.ColumnSpan="2" x:Name="lbl_status" HorizontalTextAlignment="Center"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+
+            <ActivityIndicator 
+                x:Name="AIndicator" 
+                IsRunning="True"
+                AbsoluteLayout.LayoutBounds="0.5,0.5" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
+        </AbsoluteLayout>
+    </StackLayout>
+</ContentPage>

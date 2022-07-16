@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:sys="clr-namespace:System;assembly=netstandard"
+             x:Class="Fila_Unica_BQ.Controls.FlyoutFooter">
+    <StackLayout>
+        <Grid>
+            <Label
+                x:Name="lbl_Desenvolvedor"
+                Grid.Row="0" Grid.Column="0"
+                Text="Exex-Soft"
+                TextColor="#2c3e50"
+                FontAttributes="Bold"
+                HorizontalOptions="End" />
+            <Label
+                Grid.Row="0" Grid.Column="1"
+                Text="{Binding Source={x:Static sys:DateTime.Now}, StringFormat='{0:dd MMMM, yyyy}'}"
+                TextColor="#2c3e50"
+                HorizontalOptions="Start" Padding="0,0,0,10" />
+        </Grid>
+    </StackLayout>
+</ContentView>

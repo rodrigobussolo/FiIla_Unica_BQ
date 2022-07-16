@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ResourceDictionary  
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <x:String x:Key="app_name">Fila Única - Brusque</x:String>
+    <x:String x:Key="email">exexsoft@gmail.com</x:String>
+</ResourceDictionary>
+
+
+<!--<resources>
+    <string name="app_name">Fila Única - Brusque</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Sair</string>
+
+    <string name="email">exexsoft@gmail.com</string>
+    <string name="protocolo">Protocolo:</string>
+    <string name="posicao">Posição:</string>
+    <string name="buscar">BUSCAR</string>
+    <string name="informe">Informe o número do protocolo:</string>
+    <string name="datahora">Data/Hora Inscrição:</string>
+    <string name="opcao1">Opção 1:</string>
+    <string name="opcao2">Opção 2:</string>
+    <string name="opcao3">Opção 3:</string>
+    <string name="voltar">Voltar</string>
+    <string name="bercario1">Berçário 1</string>
+    <string name="bercario2">Berçário 2</string>
+    <string name="infantil1">Infantil 1</string>
+    <string name="infantil2">infantil 2</string>
+
+    <string name="sobre">
+        O aplicativo Fila Única Brusque foi desenvolvido para auxiliar na consulta e detalhamento da posição em que um candidato a vagas para as creches do município de Brusque - SC, se encontram.\n\n
+Atualmente existe um site do município onde os pais podem verificar o posicionamento geral de seu filho na fila de espera, porém, este posicionamento geral não é suficiente, considerando que:\n
+• Cada candidato pode se cadastrar para vagas em até 3 creches,\n
+• Cada uma destas creches tem certa quantidade de candidatos aguardando vagas.\n\n
+No aplicativo Fila Única Brusque, os pais dos candidato podem, através de uma consulta simples informando o número do protocolo do candidato, verificar em que posição seu filho se encontra na fila de cada uma das creches para qual está aguardando uma vaga.\n\n\n
+Observações:\n\n
+O aplicativo Fila Única Brusque é uma produção independente. Não possui vinculo nem responsabilidade alguma com a prefeitura do município de Brusque-SC.\n\n
+Nenhuma informação pessoal do candidato é fornecida através deste aplicativo.
+    </string>
+
+    <string name="Texto_Docs">
+        Para efetuar a inscrição do aluno, vá a uma unidade escolar portanto os seguintes documentos:\n\n\n
+• CPF da Criança;\n\n
+• Certidão de nascimento da criança;\n\n
+• Comprovante de residência atualizado com o nome dos pais e/ou responsável;\n\n
+• Comprovante de renda atualizado;\n\n
+• Documento oficial do Pai/Mãe ou Responsável com foto.
+    </string>
+</resources>-->

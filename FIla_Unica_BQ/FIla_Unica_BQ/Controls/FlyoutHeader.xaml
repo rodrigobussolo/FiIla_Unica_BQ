@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fila_Unica_BQ.Controls.FlyoutHeader"
+             HeightRequest="200">
+    <Grid BackgroundColor="#2c3e50">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" Grid.Column="0"
+               Source="mipmap-xxxhdpi/launcher_foreground.jpg"
+               HorizontalOptions="Start"/>
+        <Label
+            x:Name="lbl_titulo"
+            Grid.Row="1" Grid.ColumnSpan="2"
+            TextColor="White"
+            FontSize="Large"
+            FontAttributes="Bold" 
+            HorizontalTextAlignment="Start"   
+            VerticalTextAlignment="End" 
+            Padding="20,0,0,0" />
+        <Label
+            x:Name="lbl_email"
+            Grid.Row="2" Grid.ColumnSpan="2"
+            TextColor="White"
+            VerticalTextAlignment="Start"
+            Padding="20,0,0,10"/>
+    </Grid>
+</ContentView>

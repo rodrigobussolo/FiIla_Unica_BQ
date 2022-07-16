@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             x:Class="Fila_Unica_BQ.Views.Pagina"
+             x:Name="Pagina_Conteudo">
+    <ContentPage.Resources>
+		<ResourceDictionary>
+			<ResourceDictionary.MergedDictionaries>
+				<ResourceDictionary Source="/Styles/TemaEscuro.xaml"/>
+				<ResourceDictionary Source="/Styles/Strings.xaml"/>
+			</ResourceDictionary.MergedDictionaries>
+		</ResourceDictionary>
+    </ContentPage.Resources>
+
+    <StackLayout IsTabStop="True">
+        <StackLayout BackgroundColor="#FF6830" Padding="20,10">
+            <Label x:Name="lbl_Titulo" TextColor="White" FontSize="Large" Margin="0,0,0,-8"/>
+            <Label x:Name="lbl_SubTitulo" TextColor="White" FontSize="Medium"/>
+        </StackLayout>
+
+        <AbsoluteLayout x:Name="Layout_Lista">
+            <ActivityIndicator 
+                x:Name="AIndicator" 
+                IsRunning="True"
+                AbsoluteLayout.LayoutBounds="0.5,0.5" 
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
+
+            <ListView 
+                x:Name="listaEscola"
+                SelectionMode="None"
+                SeparatorVisibility="None"
+                HasUnevenRows="True"
+                AbsoluteLayout.LayoutBounds="0,0,1,1" 
+                AbsoluteLayout.LayoutFlags="All"
+                >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="15,5,15,10">
+                                <Label Text="{Binding EscolaNome}" TextColor="{Binding colorPrimaryDark}" FontSize="Title" Margin="0,0,0,-5"/>
+                                <Label Text="{Binding Opcoes}" TextColor="Gray" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </AbsoluteLayout>
+
+        <ScrollView x:Name="scr_Texto">
+            <Label x:Name="lbl_Texto" Padding="20" FontSize="Medium"/>
+        </ScrollView>
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:Fila_Unica_BQ.Views"
+             xmlns:pages ="clr-namespace:Fila_Unica_BQ.Views;assembly=Fila_Unica_BQ" 
+             x:Class="Fila_Unica_BQ.Views.Home"
+             BackgroundColor="#254e70"
+             Title="Home">
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="/Styles/TemaEscuro.xaml"/>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Shell.ItemTemplate>
+            <DataTemplate>
+                <TabBar>
+                    <Tab Title="Teste">
+                        <ShellContent>
+                            <pages:Pagina></pages:Pagina>
+                        </ShellContent>
+                    </Tab>
+                </TabBar>
+            </DataTemplate>
+        </Shell.ItemTemplate>
+        
+        <StackLayout VerticalOptions="EndAndExpand" HorizontalOptions="Center" Padding="60,0">
+            <Image Source="img_bkg.png"></Image>
+        </StackLayout>
+
+        <StackLayout Orientation="Vertical" Margin="20" VerticalOptions="EndAndExpand">
+            <Button
+                Style="{StaticResource StyleButton}"
+                VerticalOptions="EndAndExpand"
+                Text="Berçário 1"
+                Clicked="Click_Bercario1"/>
+            <Button
+                Style="{StaticResource StyleButton}"
+                VerticalOptions="EndAndExpand"
+                Text="Berçário 2"
+                Clicked="Click_Bercario2"/>
+            <Button
+                Style="{StaticResource StyleButton}"
+                VerticalOptions="EndAndExpand"
+                Text="Infantil 1"
+                Clicked="Click_Infantil1"/>
+            <Button
+                Style="{StaticResource StyleButton}"
+                VerticalOptions="EndAndExpand"
+                Text="Infantil 2"
+                Clicked="Click_Infantil2"/>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
