@@ -15,12 +15,3 @@ System.NullReferenceException: 'Object reference not set to an instance of an ob
 
   $exception	{System.NullReferenceException: Object reference not set to an instance of an object.
 at Android.Runtime.JNINativeWrapper._unhandled_exception (System.Exception e) [0x0000e] in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/Android.Runtime/JNINativeWrapper.g.cs:12 at Android.Runtime.JNINativeWrapper.Wrap_JniMarshal_PPL_V (_JniMarshal_PPL_V callback, System.IntPtr jnienv, System.IntPtr klazz, System.IntPtr p0) [0x0001d] in /Users/runner/work/1/s/xamarin-android/src/Mono.Android/Android.Runtime/JNINativeWrapper.g.cs:111 at (wrapper native-to-managed) Android.Runtime.JNINativeWrapper.Wrap_JniMarshal_PPL_V(intptr,intptr,intptr)} System.NullReferenceException
-Próximos passos:
-
-Gravar as informações em um banco de dados (SQLLite, por exemplo)
-Possilitar a busca por nível:
-Berçário 1
-Berçário 2
-Infantil 1
-Infantil 2
-Pré escola 1
